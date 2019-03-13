@@ -11,7 +11,7 @@ $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 
 // datos para el correo
-$destinatario= 'josubrenes0@gmail.com';
+$destinatario= 'helmut-1521@hotmail.com';
 $asunto = 'clienrte desde mi web';
 
 $carta= "De : $nombre \n";
