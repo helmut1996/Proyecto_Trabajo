@@ -1,61 +1,83 @@
 body{
-    background-color:#38ada9; 
+    background-color: #00838F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+width: 350px;
+padding: 40px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background: #2f3542;
+text-align: center;
 }
 
-
-.contact-form{
-    width: 85%;
-    max-width: 600px;
-    background: whitesmoke;
-   margin: 50px auto;
-    padding: 30px 40px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 20px black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
-}
-
-.contact-form h1{
-    margin-top: 0;
-    font-weight: 200;
-}
-
-.txtb{
-    border: 1px solid gray;
-    margin: 12px 0;
-    padding: 18px 12px;
-    border-radius: 8px;
-}
-.txtb label{
-    display: block;
-    text-align: left;
+.box h1{
     text-transform: uppercase;
-    color: #333;
+    color: white;
+    font-weight: 500; 
+}
+.box h2{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200; 
 }
 
-.txtb input, .txtb textarea{
-    width: 100%;
+.box input[type ="text"], .box input[type="password"]{
+    border: 0;
     background: none;
-    border: none;
-    outline: none;
-    font-size: 18px;
-}
-
-/*Mensaje*/
-
-.mensaje{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mensaje h1{
-    font-size: 35px;
     display: block;
-    text-align: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    border: 2px solid #1e90ff;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type ="text"]:focus, .box input[type="password"]:focus{
+width: 280px;
+border-color:black; 
+}
+
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #2ed573;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+    background:  #2ed573;
+}
+.btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #2ed573;
+    padding: 14px 10px;
+    width: 130px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.btn:hover{
+background:  #2ed573;
+color: white;
+}
+hr{
+    border: 2px solid #747d8c;
 }
